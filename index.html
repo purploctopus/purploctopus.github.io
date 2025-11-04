@@ -3,142 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="google-site-verification" content="9My2GzCnvPE9v3FxzH0rupQ13r7LG5ei_pXGLFabdCM" />
   <meta name="description" content="PurplOctopus apps: Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
   <title>PurplOctopus Apps</title>
   <link rel="icon" type="image/png" href="purplOctopusLogo1.png">
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
-      color: #222;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    /* Top thumbnail nav */
-    nav.app-thumbs {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem;
-      background: rgba(255,255,255,0.8);
-      backdrop-filter: blur(8px);
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      border-bottom: 1px solid rgba(0,0,0,0.1);
-    }
-    nav.app-thumbs img {
-      width: 70px;
-      height: 70px;
-      border-radius: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      transition: transform 0.2s ease;
-    }
-    nav.app-thumbs img:hover {
-      transform: scale(1.08);
-    }
-
-    /* App sections */
-    section.app-section {
-      padding: 4rem 1rem;
-    }
-    section.app-section:nth-child(even) {
-      background: #f9fdf9;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    p.pitch {
-      font-size: 1.2rem;
-      margin-bottom: 0.5rem;
-    }
-
-    .cta {
-      margin: 2rem 0;
-    }
-    .cta a {
-      display: inline-block;
-      background: linear-gradient(135deg, #43a047, #66bb6a);
-      color: white;
-      padding: 1rem 2.5rem;
-      border-radius: 12px;
-      text-decoration: none;
-      font-size: 1.2rem;
-      font-weight: 600;
-      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .cta a:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
-    }
-
-    .screenshots {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin: 2rem 0;
-    }
-    .screenshots img {
-      max-width: 220px;
-      border-radius: 16px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-      transition: transform 0.2s ease;
-    }
-    .screenshots img:hover {
-      transform: scale(1.05);
-    }
-
-    .video-container {
-      position: relative;
-      padding-bottom: 56.25%; /* 16:9 */
-      height: 0;
-      overflow: hidden;
-      max-width: 100%;
-      margin: 2rem auto;
-    }
-    .video-container iframe {
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      border: 0;
-    }
-
-    footer {
-      margin: 3rem 0;
-      font-size: 0.9rem;
-      color: #666;
-    }
-      
-      .divider {
-        width: 60px;
-        height: 4px;
-        background: linear-gradient(to right, #43a047, #66bb6a);
-        margin: 3rem auto;
-        border-radius: 2px;
-      }
-      
-      .boxed-content {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 1.5rem;
-        background: rgba(255, 255, 255, 0.15);
-        border-radius: 16px;
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-      }
-      
-  </style>
+      <style>
+          html { scroll-behavior: smooth; }
+          body {
+              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+              background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
+              color: #222;
+              margin: 0; padding: 0;
+              text-align: center;
+          }
+          
+          /* Top thumbnail nav */
+          nav.app-thumbs {
+              display: flex; justify-content: center; gap: 1rem;
+              padding: 1rem;
+              background: rgba(255,255,255,0.6);
+              backdrop-filter: blur(8px);
+              position: sticky; top: 0; z-index: 1000;
+              border-bottom: 1px solid rgba(0,0,0,0.1);
+          }
+          nav.app-thumbs img {
+              width: 70px; height: 70px;
+              border-radius: 16px;
+              box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+              transition: transform 0.2s ease;
+          }
+          nav.app-thumbs img:hover { transform: scale(1.08); }
+          
+          /* Sections */
+          section.app-section { padding: 4rem 1rem; }
+          h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+          p.pitch { font-size: 1.2rem; margin-bottom: 0.75rem; }
+          
+          .cta { margin: 2rem 0; }
+          .cta a {
+              display: inline-block;
+              background: rgba(255, 255, 255, 0.2);
+              backdrop-filter: blur(6px);
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              color: #222;
+              padding: 1rem 2.5rem;
+              border-radius: 12px;
+              text-decoration: none;
+              font-size: 1.2rem; font-weight: 600;
+              box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+              transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+          .cta a:hover {
+              transform: translateY(-2px);
+              box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+          }
+          
+          .screenshots {
+              display: flex; justify-content: center; gap: 1rem;
+              flex-wrap: wrap; margin: 2rem 0;
+          }
+          .screenshots img {
+              max-width: 220px;
+              border-radius: 16px;
+              box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+              transition: transform 0.2s ease;
+          }
+          .screenshots img:hover { transform: scale(1.05); }
+          
+          .video-container {
+              position: relative; padding-bottom: 56.25%;
+              height: 0; overflow: hidden; max-width: 100%;
+              margin: 2rem auto;
+          }
+          .video-container iframe {
+              position: absolute; top: 0; left: 0;
+              width: 100%; height: 100%; border: 0;
+          }
+          
+          footer {
+              margin: 3rem 0;
+              font-size: 0.9rem; color: #666;
+          }
+          .divider {
+              width: 60px; height: 4px;
+              background: linear-gradient(to right, #43a047, #66bb6a);
+              margin: 3rem auto; border-radius: 2px;
+          }
+          
+          /* Glass box */
+          .boxed-content {
+              max-width: 700px; margin: 0 auto;
+              padding: 1.5rem;
+              background: rgba(255, 255, 255, 0.15);
+              border-radius: 16px;
+              backdrop-filter: blur(12px);
+              -webkit-backdrop-filter: blur(12px);
+              border: 1px solid rgba(255, 255, 255, 0.3);
+              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+              animation: fadeInUp 0.6s ease-out;
+              color: rgba(0,0,0,0.85);
+          }
+          .boxed-content h1,
+          .boxed-content h2,
+          .boxed-content h3 { color: rgba(0,0,0,0.9); }
+          
+          @keyframes fadeInUp {
+              from { opacity: 0; transform: translateY(20px); }
+              to { opacity: 1; transform: translateY(0); }
+          }
+      </style>
 </head>
 <body>
 
@@ -146,51 +118,49 @@
   <nav class="app-thumbs">
     <a href="#math-battle"><img src="mathbattle-icon.png" alt="Math Battle"></a>
     <a href="#quiet-mind"><img src="quietmind-icon.png" alt="Quiet Mind"></a>
-    <a href="#space-debris-inc"><img src="space-icon.png" alt="App 3"></a>
-    <a href="#tranquil-escape"><img src="tranquil-icon.png" alt="App 4"></a>
+    <a href="#space-debris-inc"><img src="space-icon.png" alt="Space Debris Inc."></a>
+    <a href="#tranquil-escape"><img src="tranquil-icon.png" alt="Tranquil Escape"></a>
   </nav>
 
-  <!-- Math Battle Section -->
+  <!-- Math Battle -->
   <section id="math-battle" class="app-section">
-
-    <section id="math-battle-description" class="boxed-content">
-        <h1>Math Battle: Heroes of × & ÷</h1>
-        <p class="pitch">Turn math into a battle! Practice multiplication & division while having fun.</p>
+    <section class="boxed-content">
+      <h1>Math Battle: Heroes of × & ÷</h1>
+      <p class="pitch">Turn math into a battle! Practice multiplication & division while having fun.</p>
       <h2>Sharpen Your Skills with Math Battle</h2>
-
       <p>Sharpen your Multiplication & Division math skills while unleashing epic attacks!</p>
-
       <p>Step into a fantasy world where solving math problems fuels your hero’s power. Choose your class (Warrior, Wizard, or Bard) and unlock powerful attacks like Crusader Cleave or Infinity Burst. Every correct answer charges your strikes, every battle makes you stronger.</p>
 
-      <h3>Features</h3>
+      <div class="cta">
+        <a href="https://apps.apple.com/us/app/math-battle-heroes-of/id1604247762" target="_blank">Download on the App Store</a>
+      </div>
+      <div class="screenshots">
+        <img src="battle1.png" alt="Screenshot 1" onclick="openPopup(this)">
+        <img src="upgradeYourHero1.png" alt="Screenshot 2" onclick="openPopup(this)">
+        <img src="battle2.png" alt="Screenshot 3" onclick="openPopup(this)">
+      </div>
 
+      <!-- Lightbox Modal -->
+      <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Expanded view">
+      </div>
+      <h3>Features</h3>
       <p><strong>Epic Math Battles:</strong> Defeat enemies by solving problems quickly and accurately.</p>
       <p><strong>Fantasy-Themed UI:</strong> D&D-inspired visuals with glowing effects and unique attack animations.</p>
       <p><strong>Level Up & Unlock:</strong> Progress through 40 levels, unlocking new attacks and skins.</p>
       <p><strong>Boosts & Bonuses:</strong> Time-limited buffs and weapon bonuses keep combat exciting.</p>
       <p><strong>Kid-Friendly:</strong> Designed to make math fun, engaging, and rewarding.</p>
-
       <p>Whether you’re a student sharpening your skills or a gamer looking for a new twist, <strong>Math Battle</strong> makes learning feel like an adventure.</p>
-    <div class="cta">
-      <a href="https://apps.apple.com/us/app/math-battle-heroes-of/id1604247762" target="_blank">Download on the App Store</a>
-    </div>
-    <div class="screenshots">
-      <img src="battle1.png" alt="Screenshot 1">
-      <img src="upgradeYourHero1.png" alt="Screenshot 2">
-      <img src="battle2.png" alt="Screenshot 3">
-    </div>
-    <section class="video-container">
-      <iframe src="https://www.youtube-nocookie.com/embed/PuV8ulWzSWc"
-        title="Math Battle Gameplay"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen>
-      </iframe>
+      <div class="video-container">
+        <iframe src="https://www.youtube-nocookie.com/embed/PuV8ulWzSWc"
+          title="Math Battle Gameplay"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </section>
   </section>
-  </section>
 
-  <div class="divider"></div>
-  <!-- Quiet Mind Section -->
+  <!-- Quiet Mind -->
   <section id="quiet-mind" class="app-section">
     <section class="boxed-content">
       <h1>Quiet Mind</h1>
@@ -200,55 +170,55 @@
         <a href="https://apps.apple.com/us/app/quiet-mind/id1397995408" target="_blank">Download on the App Store</a>
       </div>
       <div class="screenshots">
-        <img src="qm1.png" alt="qm1">
-        <img src="qm2.png" alt="qm2">
-        <img src="qm3.png" alt="qm3">
-        <img src="qm4.png" alt="qm4">
-        <img src="qm5.png" alt="qm5">
+        <img src="qm1.png" alt="Quiet Mind screenshot 1" onclick="openPopup(this)">
+        <img src="qm2.png" alt="Quiet Mind screenshot 2" onclick="openPopup(this)">
+        <img src="qm3.png" alt="Quiet Mind screenshot 3" onclick="openPopup(this)">
+        <img src="qm4.png" alt="Quiet Mind screenshot 4" onclick="openPopup(this)">
+        <img src="qm5.png" alt="Quiet Mind screenshot 5" onclick="openPopup(this)">
       </div>
     </section>
   </section>
-  
-  <div class="divider"></div>
-  <!-- App 3 Section -->
+
+  <!-- Space Debris Inc. -->
   <section id="space-debris-inc" class="app-section">
     <section class="boxed-content">
       <h1>Space Debris Inc.</h1>
       <p class="pitch">The Space Debris Cleanup Game</p>
+      <p>Space Debris Inc is a casual, fun, space debris cleanup game. The more you cleanup the more Creds you earn which in turn can be used to buy better equipment and grow your company. Can you become the #1 space junker in the galaxy?</p>
       <div class="cta">
         <a href="https://apps.apple.com/us/app/space-debris-inc/id1613949132" target="_blank">Download on the App Store</a>
       </div>
       <div class="screenshots">
-        <img src="sdi1.png" alt="Space Debris Inc 1">
-        <img src="sdi2.png" alt="Space Debris Inc 2">
-        <img src="sdi3.png" alt="Space Debris Inc 3">
-        <img src="sdi4.png" alt="Space Debris Inc 4">
-        <img src="sdi5.png" alt="Space Debris Inc 5">
+        <img src="sdi1.png" alt="Space Debris Inc screenshot 1" onclick="openPopup(this)">
+        <img src="sdi2.png" alt="Space Debris Inc screenshot 2" onclick="openPopup(this)">
+        <img src="sdi3.png" alt="Space Debris Inc screenshot 3" onclick="openPopup(this)">
+        <img src="sdi4.png" alt="Space Debris Inc screenshot 4" onclick="openPopup(this)">
+        <img src="sdi5.png" alt="Space Debris Inc screenshot 5" onclick="openPopup(this)">
       </div>
+
     </section>
   </section>
-  
-  <div class="divider"></div>
-  <!-- App 4 Section -->
+
+  <!-- Tranquil Escape -->
   <section id="tranquil-escape" class="app-section">
     <section class="boxed-content">
       <h1>Tranquil Escape</h1>
       <p class="pitch">Increase your productivity and enhance your calm.</p>
+      <p>Increase your productivity and enhance your calm with tranquil sounds to relax you and white noises to drown out all those stressful distractions.  From calming waterfalls, owls singing in the night to various white noises, this application tries to bring all the calming sounds of this world to your device.</p>
       <div class="cta">
         <a href="https://apps.apple.com/us/app/tranquil-escape/id1466788421" target="_blank">Download on the App Store</a>
       </div>
       <div class="screenshots">
-        <img src="te1.png" alt="Tranquil Escape 1">
-        <img src="te2.png" alt="Tranquil Escape 2">
-        <img src="te3.png" alt="Tranquil Escape 3">
-        <img src="te4.png" alt="Tranquil Escape 4">
+        <img src="te1.png" alt="Tranquil Escape screenshot 1" onclick="openPopup(this)">
+        <img src="te2.png" alt="Tranquil Escape screenshot 2" onclick="openPopup(this)">
+        <img src="te3.png" alt="Tranquil Escape screenshot 3" onclick="openPopup(this)">
+        <img src="te4.png" alt="Tranquil Escape screenshot 4" onclick="openPopup(this)">
       </div>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/KXyFm-8_MeA"
           title="Tranquil Escape - App Preview"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+          allowfullscreen></iframe>
       </div>
     </section>
   </section>
@@ -256,5 +226,69 @@
   <footer>
     © 2025 PurplOctopus
   </footer>
+  <!-- Popup container (only one needed) -->
+  <div id="popup" class="popup" onclick="closePopup()">
+    <img id="popup-img" src="" alt="Expanded view">
+  </div>
+
+  <style>
+  .screenshots img {
+    cursor: pointer;
+  }
+
+<!-- Popup container (only one needed, place once before </body>) -->
+<div id="popup" class="popup" onclick="closePopup()">
+<div class="popup-box">
+  <img id="popup-img" src="" alt="Expanded view">
+</div>
+</div>
+
+<style>
+.screenshots img {
+cursor: pointer;
+}
+
+/* Fullscreen overlay */
+.popup {
+display: none;
+position: fixed;
+z-index: 2000;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background: rgba(0,0,0,0.3); /* subtle dim */
+justify-content: center;
+align-items: center;
+}
+
+/* Glassy box in the center */
+.popup-box {
+background: rgba(255,255,255,0.15);
+backdrop-filter: blur(12px);
+-webkit-backdrop-filter: blur(12px);
+border-radius: 16px;
+border: 1px solid rgba(255,255,255,0.3);
+box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+padding: 0.5rem;
+}
+
+.popup-box img {
+max-width: 90vw;
+max-height: 90vh;
+border-radius: 12px;
+}
+</style>
+
+<script>
+function openPopup(img) {
+const popup = document.getElementById("popup");
+const popupImg = document.getElementById("popup-img");
+popupImg.src = img.src;
+popup.style.display = "flex"; // flex centers it
+}
+function closePopup() {
+document.getElementById("popup").style.display = "none";
+}
+    
+</script>
 </body>
 </html>
