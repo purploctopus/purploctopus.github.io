@@ -13,17 +13,45 @@
       margin: 0;
       padding: 0;
     }
+
     header {
-      padding: 2rem;
+      padding: 3rem 1rem;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.3);
     }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
+
     p.pitch {
       font-size: 1.2rem;
       margin-bottom: 2rem;
     }
+
+    .cta {
+      margin: 2rem 0;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: linear-gradient(135deg, #43a047, #66bb6a);
+      color: white;
+      padding: 1rem 2.5rem;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 600;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .cta a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+
     .screenshots {
       display: flex;
       justify-content: center;
@@ -31,23 +59,32 @@
       flex-wrap: wrap;
       margin: 2rem 0;
     }
+
     .screenshots img {
-      max-width: 250px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      max-width: 220px;
+      border-radius: 16px;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      transition: transform 0.2s ease;
     }
-    .cta {
-      margin: 2rem 0;
+    .screenshots img:hover {
+      transform: scale(1.05);
     }
-    .cta a {
-      display: inline-block;
-      background: #4CAF50;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.2rem;
+
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      overflow: hidden;
+      max-width: 100%;
+      margin: 2rem auto;
     }
+    .video-container iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
     footer {
       margin: 3rem 0;
       font-size: 0.9rem;
@@ -58,11 +95,13 @@
 <body>
   <header>
     <h1>Math Battle: Heroes of × & ÷</h1>
-    <p class="pitch">Turn math into a battle! practice multiplication & division while having fun.</p>
+    <p class="pitch">Turn math into a battle! Practice multiplication & division while having fun.</p>
   </header>
 
   <div class="cta">
-    <a href="https://apps.apple.com/us/app/math-battle-heroes-of/id1604247762" target="_blank">Download on the App Store</a>
+    <a href="https://apps.apple.com/us/app/math-battle-heroes-of/id1604247762" target="_blank">
+      Download on the App Store
+    </a>
   </div>
 
   <section class="screenshots">
@@ -71,11 +110,9 @@
     <img src="battle2.png" alt="Math Battle Screenshot 3">
   </section>
 
-  <section>
-    <iframe width="560" height="315"
-      src="https://www.youtube-nocookie.com/embed/PuV8ulWzSWc"
+  <section class="video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/PuV8ulWzSWc"
       title="Math Battle Gameplay"
-      frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen>
     </iframe>
