@@ -3,29 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Math Battle: Heroes of Multiplication & Division</title>
+  <title>PurpleOctopus Apps</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: linear-gradient(180deg, #e8f5e9, #ffffff);
       color: #222;
-      text-align: center;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
 
-    header {
-      padding: 3rem 1rem;
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(255,255,255,0.3);
+    /* Top thumbnail nav */
+    nav.app-thumbs {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    nav.app-thumbs img {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease;
+    }
+    nav.app-thumbs img:hover {
+      transform: scale(1.08);
     }
 
+    /* App sections */
+    section.app-section {
+      padding: 4rem 1rem;
+    }
+    section.app-section:nth-child(even) {
+      background: #f9fdf9;
+    }
     h1 {
-      font-size: 2.5rem;
+      font-size: 2rem;
       margin-bottom: 0.5rem;
     }
-
     p.pitch {
       font-size: 1.2rem;
       margin-bottom: 2rem;
@@ -34,7 +60,6 @@
     .cta {
       margin: 2rem 0;
     }
-
     .cta a {
       display: inline-block;
       background: linear-gradient(135deg, #43a047, #66bb6a);
@@ -42,7 +67,7 @@
       padding: 1rem 2.5rem;
       border-radius: 12px;
       text-decoration: none;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       font-weight: 600;
       box-shadow: 0 6px 14px rgba(0,0,0,0.2);
       transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -59,7 +84,6 @@
       flex-wrap: wrap;
       margin: 2rem 0;
     }
-
     .screenshots img {
       max-width: 220px;
       border-radius: 16px;
@@ -93,29 +117,78 @@
   </style>
 </head>
 <body>
-  <header>
+
+  <!-- Top Thumbnails -->
+  <nav class="app-thumbs">
+    <a href="#math-battle"><img src="mathbattle-icon.png" alt="Math Battle"></a>
+    <a href="#quiet-mind"><img src="quietmind-icon.png" alt="Quiet Mind"></a>
+    <a href="#app3"><img src="tranquil-icon.png" alt="App 3"></a>
+    <a href="#app4"><img src="space-icon.png" alt="App 4"></a>
+  </nav>
+
+  <!-- Math Battle Section -->
+  <section id="math-battle" class="app-section">
     <h1>Math Battle: Heroes of × & ÷</h1>
     <p class="pitch">Turn math into a battle! Practice multiplication & division while having fun.</p>
-  </header>
-
-  <div class="cta">
-    <a href="https://apps.apple.com/us/app/math-battle-heroes-of/id1604247762" target="_blank">
-      Download on the App Store
-    </a>
-  </div>
-
-  <section class="screenshots">
-    <img src="battle1.png" alt="Math Battle Screenshot 1">
-    <img src="upgradeYourHero1.png" alt="Math Battle Screenshot 2">
-    <img src="battle2.png" alt="Math Battle Screenshot 3">
+    <div class="cta">
+      <a href="https://apps.apple.com/us/app/math-battle-heroes-of/id1604247762" target="_blank">Download on the App Store</a>
+    </div>
+    <div class="screenshots">
+      <img src="battle1.png" alt="Screenshot 1">
+      <img src="upgradeYourHero1.png" alt="Screenshot 2">
+      <img src="battle2.png" alt="Screenshot 3">
+    </div>
+    <div class="video-container">
+      <iframe src="Yhttps://www.youtube-nocookie.com/embed/PuV8ulWzSWc" allowfullscreen></iframe>
+    </div>
   </section>
 
-  <section class="video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/PuV8ulWzSWc"
-      title="Math Battle Gameplay"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+  <!-- Quiet Mind Section -->
+  <section id="quiet-mind" class="app-section">
+    <h1>Quiet Mind</h1>
+    <p class="pitch">Guided meditations with soothing visuals and soundscapes.</p>
+    <div class="cta">
+      <a href="https://apps.apple.com/us/app/quiet-mind/id1397995408" target="_blank">Download on the App Store</a>
+    </div>
+    <div class="screenshots">
+      <img src="qm1.png" alt="Screenshot 1">
+      <img src="qm2.png" alt="Screenshot 2">
+    </div>
+    <div class="video-container">
+      <iframe src="YOUTUBE_EMBED_URL" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- App 3 Section -->
+  <section id="app3" class="app-section">
+    <h1>App 3 Title</h1>
+    <p class="pitch">Short tagline for App 3.</p>
+    <div class="cta">
+      <a href="APP_STORE_LINK" target="_blank">Download on the App Store</a>
+    </div>
+    <div class="screenshots">
+      <img src="app3-1.png" alt="Screenshot 1">
+      <img src="app3-2.png" alt="Screenshot 2">
+    </div>
+    <div class="video-container">
+      <iframe src="YOUTUBE_EMBED_URL" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- App 4 Section -->
+  <section id="app4" class="app-section">
+    <h1>App 4 Title</h1>
+    <p class="pitch">Short tagline for App 4.</p>
+    <div class="cta">
+      <a href="APP_STORE_LINK" target="_blank">Download on the App Store</a>
+    </div>
+    <div class="screenshots">
+      <img src="app4-1.png" alt="Screenshot 1">
+      <img src="app4-2.png" alt="Screenshot 2">
+    </div>
+    <div class="video-container">
+      <iframe src="YOUTUBE_EMBED_URL" allowfullscreen></iframe>
+    </div>
   </section>
 
   <footer>
