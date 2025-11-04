@@ -110,17 +110,35 @@
               from { opacity: 0; transform: translateY(20px); }
               to { opacity: 1; transform: translateY(0); }
           }
+          
+          .site-header {
+            text-align: left;
+            padding: 1rem 2rem;
+          }
+
+          .site-header h1 {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 0;
+            color: #111; /* dark neutral for Apple-like simplicity */
+            letter-spacing: 0.5px;
+          }
+          
       </style>
 </head>
 <body>
-
+    <!-- Site Heading -->
+    <header class="site-header">
+      <h1>Apps by PurplOctopus</h1>
+    </header>
   <!-- Top Thumbnails -->
-  <nav class="app-thumbs">
+    <nav class="app-thumbs">
     <a href="#math-battle"><img src="mathbattle-icon.png" alt="Math Battle"></a>
     <a href="#quiet-mind"><img src="quietmind-icon.png" alt="Quiet Mind"></a>
     <a href="#space-debris-inc"><img src="space-icon.png" alt="Space Debris Inc."></a>
     <a href="#tranquil-escape"><img src="tranquil-icon.png" alt="Tranquil Escape"></a>
-  </nav>
+    </nav>
 
   <!-- Math Battle -->
   <section id="math-battle" class="app-section">
