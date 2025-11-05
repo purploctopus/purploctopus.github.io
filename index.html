@@ -125,11 +125,41 @@
             letter-spacing: 0.5px;
           }
           
+          .site-header {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem; /* spacing between logo and text */
+            padding: 1rem;
+          }
+
+          .logo-pin {
+            height: 40px;
+            width: auto;
+            transition: transform 0.3s ease, filter 0.3s ease;
+            cursor: pointer;
+          }
+
+          .logo-pin:hover {
+            transform: scale(1.15) rotate(-5deg);
+            filter: drop-shadow(0 0 6px #9c27b0);
+          }
+          .site-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* centers horizontally */
+            gap: 0.5rem;
+            padding: 1rem;
+            font-size: 0.9rem;
+            color: #555;
+            text-align: center;
+          }
+          
       </style>
 </head>
 <body>
     <!-- Site Heading -->
     <header class="site-header">
+        <img src="purplOctopusLogo1.png" alt="PurplOctopus Logo" class="logo-pin" />
       <h1>Apps by PurplOctopus</h1>
     </header>
   <!-- Top Thumbnails -->
@@ -236,8 +266,9 @@
     </section>
   </section>
 
-  <footer>
-    © 2025 PurplOctopus
+  <footer class="site-footer">
+    <img src="purplOctopusLogo1.png" alt="PurplOctopus Logo" class="logo-pin" />
+    <span>© 2025 PurplOctopus</span>
   </footer>
   <!-- Popup container (only one needed) -->
   <div id="popup" class="popup" onclick="closePopup()">
