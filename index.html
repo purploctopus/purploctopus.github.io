@@ -19,152 +19,140 @@
       <style>
           html { scroll-behavior: smooth; }
           body {
-              font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-              background: linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%);
-              color: #222;
+              /* Premium Tip: Use Inter or system fonts with tighter tracking */
+              font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+              background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+              color: #1d1d1f; /* Apple's off-black */
               margin: 0; padding: 0;
               text-align: center;
+              -webkit-font-smoothing: antialiased;
           }
           
-          /* Top thumbnail nav */
+          /* Top thumbnail nav - More spread out */
           nav.app-thumbs {
-              display: flex; justify-content: center; gap: 1rem;
-              padding: 1rem;
-              background: rgba(255,255,255,0.6);
-              backdrop-filter: blur(8px);
+              display: flex; justify-content: center; gap: 2rem;
+              padding: 1.2rem;
+              background: rgba(255,255,255,0.7);
+              backdrop-filter: saturate(180%) blur(20px); /* More aggressive blur */
               position: sticky; top: 0; z-index: 1000;
-              border-bottom: 1px solid rgba(0,0,0,0.1);
+              border-bottom: 1px solid rgba(0,0,0,0.05);
           }
           nav.app-thumbs img {
-              width: 70px; height: 70px;
-              border-radius: 16px;
-              box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-              transition: transform 0.2s ease;
+              width: 64px; height: 64px;
+              border-radius: 14px;
+              box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+              transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
           }
-          nav.app-thumbs img:hover { transform: scale(1.08); }
+          nav.app-thumbs img:hover {
+              transform: translateY(-4px) scale(1.1);
+              box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+          }
           
-          /* Sections */
-          section.app-section { padding: 2rem 1rem; }
-          h1 { font-size: 2rem; margin-bottom: 0.5rem; }
-          p.pitch { font-size: 1.2rem; margin-bottom: 0.75rem; }
+          /* Sections - Wider Layout */
+          section.app-section { padding: 5rem 1rem; }
           
-          .cta { margin: 2rem 0; }
+          h1 {
+              font-size: 3rem;
+              font-weight: 800;
+              letter-spacing: -0.03em; /* Tighter tracking for premium headers */
+              margin-bottom: 1rem;
+          }
+          p.pitch {
+              font-size: 1.4rem;
+              font-weight: 400;
+              color: #424245;
+              max-width: 800px;
+              margin: 0 auto 2rem auto;
+          }
+          
+          /* Buttons - Refined Glassmorphism */
+          .cta { margin: 3rem 0; }
           .cta a {
               display: inline-block;
-              background: rgba(255, 255, 255, 0.2);
-              backdrop-filter: blur(6px);
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              color: #222;
-              padding: 1rem 2.5rem;
-              border-radius: 12px;
+              background: #000; /* Darker buttons feel more "pro" */
+              color: #fff;
+              padding: 1rem 3rem;
+              border-radius: 980px; /* Fully rounded Pill shape */
               text-decoration: none;
-              font-size: 1.2rem; font-weight: 600;
-              box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-              transition: transform 0.2s ease, box-shadow 0.2s ease;
+              font-size: 1.1rem; font-weight: 600;
+              transition: all 0.3s ease;
           }
           .cta a:hover {
-              transform: translateY(-2px);
-              box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+              transform: scale(1.02);
+              background: #333;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.2);
           }
           
+          /* Screenshots - Wider & Responsive */
           .screenshots {
-              display: flex; justify-content: center; gap: 1rem;
-              flex-wrap: wrap; margin: 2rem 0;
+              display: flex; justify-content: center; gap: 1.5rem;
+              flex-wrap: wrap; margin: 3rem auto;
+              max-width: 1200px; /* Increased width */
           }
           .screenshots img {
-              max-width: 220px;
-              border-radius: 16px;
-              box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-              transition: transform 0.2s ease;
+              max-width: 260px;
+              border-radius: 22px;
+              box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+              transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
           }
-          .screenshots img:hover { transform: scale(1.05); }
+          .screenshots img:hover { transform: scale(1.03) translateY(-5px); }
           
+          /* Video - Larger focus */
           .video-container {
               position: relative; padding-bottom: 56.25%;
-              height: 0; overflow: hidden; max-width: 100%;
-              margin: 2rem auto;
+              height: 0; overflow: hidden;
+              max-width: 1000px; /* Wider video */
+              margin: 4rem auto;
+              border-radius: 24px;
+              box-shadow: 0 30px 60px rgba(0,0,0,0.2);
           }
           .video-container iframe {
               position: absolute; top: 0; left: 0;
               width: 100%; height: 100%; border: 0;
           }
           
-          footer {
-              margin: 3rem 0;
-              font-size: 0.9rem; color: #666;
-          }
-          .divider {
-              width: 60px; height: 4px;
-              background: linear-gradient(to right, #43a047, #66bb6a);
-              margin: 3rem auto; border-radius: 2px;
-          }
-          
-          /* Glass box */
+          /* Glass box - Wider and subtler */
           .boxed-content {
-              max-width: 700px; margin: 0 auto;
-              padding: 1.5rem;
-              background: rgba(255, 255, 255, 0.15);
-              border-radius: 16px;
-              backdrop-filter: blur(12px);
-              -webkit-backdrop-filter: blur(12px);
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-              animation: fadeInUp 0.6s ease-out;
-              color: rgba(0,0,0,0.85);
+              max-width: 1000px; /* Significantly wider */
+              margin: 0 auto;
+              padding: 3rem;
+              background: rgba(255, 255, 255, 0.4);
+              border-radius: 32px;
+              backdrop-filter: blur(20px);
+              -webkit-backdrop-filter: blur(20px);
+              border: 1px solid rgba(255, 255, 255, 0.5);
+              box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+              animation: fadeInUp 0.8s cubic-bezier(0.22, 1, 0.36, 1);
           }
-          .boxed-content h1,
-          .boxed-content h2,
-          .boxed-content h3 { color: rgba(0,0,0,0.9); }
+
+          .site-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 2rem 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+          }
           
+          .logo-pin {
+            height: 48px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+          }
+
+          /* Modern Divider */
+          .divider {
+              width: 100px; height: 1px;
+              background: rgba(0,0,0,0.1);
+              margin: 4rem auto;
+          }
+
           @keyframes fadeInUp {
-              from { opacity: 0; transform: translateY(20px); }
+              from { opacity: 0; transform: translateY(30px); }
               to { opacity: 1; transform: translateY(0); }
           }
-          
-          .site-header {
-            text-align: left;
-            padding: 1rem 2rem;
-          }
-
-          .site-header h1 {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin: 0;
-            color: #111; /* dark neutral for Apple-like simplicity */
-            letter-spacing: 0.5px;
-          }
-          
-          .site-header {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem; /* spacing between logo and text */
-            padding: 1rem;
-          }
-
-          .logo-pin {
-            height: 40px;
-            width: auto;
-            transition: transform 0.3s ease, filter 0.3s ease;
-            cursor: pointer;
-          }
-
-          .logo-pin:hover {
-            transform: scale(1.15) rotate(-5deg);
-            filter: drop-shadow(0 0 6px #9c27b0);
-          }
-          .site-footer {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* centers horizontally */
-            gap: 0.5rem;
-            padding: 1rem;
-            font-size: 0.9rem;
-            color: #555;
-            text-align: center;
-          }
-          
       </style>
+
 </head>
 <body>
     <!-- Site Heading -->
@@ -350,7 +338,7 @@
 
   <footer class="site-footer">
     <img src="purplOctopusLogo1.png" alt="PurplOctopus Logo" class="logo-pin" />
-    <span>© 2025 PurplOctopus</span>
+    <span>© 2026 PurplOctopus</span>
   </footer>
   <!-- Popup container (only one needed) -->
   <div id="popup" class="popup" onclick="closePopup()">
