@@ -1,11 +1,7 @@
 name: Daily Space Launch Data Sync
 
 on:
-  schedule:
-    # Runs automatically every single day at midnight UTC
-    - cron: '0 0 * * *'
   workflow_dispatch:
-    # Allows you to press a "Run Workflow" button manually in GitHub to test it instantly
 
 permissions:
   contents: write
@@ -14,11 +10,13 @@ jobs:
   refresh-data:
     runs-on: ubuntu-latest
     steps:
+    # 1. Upgraded to v5 for Node 24 support
     - name: Checkout repository code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
 
+    # 2. Upgraded to v6 for Node 24 support
     - name: Set up Python environment
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: '3.x'
 
@@ -30,7 +28,5 @@ jobs:
         git config --global user.name "GitHub Action Bot"
         git config --global user.email "actions@github.com"
         git add launches.json
-        # Only commit if the file actually changed to avoid empty log errors
         git diff-index --quiet HEAD || git commit -m "Automated update of upcoming space launches"
         git push
-
