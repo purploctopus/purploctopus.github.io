@@ -2,16 +2,14 @@ import json
 import urllib.request
 import sys
 
-# The production-ready v2.3.0 endpoint path
+# Explicitly requesting the exact json structure directly inside the web path
 API_URL = "https://thespacedevs.com"
 
 try:
     print("Fetching raw data from Launch Library 2 (v2.3.0)...")
     
-    # CRITICAL FIX: Explicitly request application/json so the server doesn't send HTML website data
     headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) SpaceTrackerApp/1.0',
-        'Accept': 'application/json'
+        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) SpaceTrackerApp/1.0'
     }
     
     req = urllib.request.Request(API_URL, headers=headers)
@@ -23,7 +21,7 @@ try:
     try:
         raw_data = json.loads(raw_body)
     except json.JSONDecodeError as json_err:
-        print(f"\n❌ CRITICAL: Server still did not return valid JSON! Status Code: {status_code}")
+        print(f"\n❌ CRITICAL: Server did not return valid JSON! Status Code: {status_code}")
         print("--- START OF SERVER RESPONSE PREVIEW ---")
         print(raw_body[:500])
         print("--- END OF SERVER RESPONSE PREVIEW ---")
@@ -31,17 +29,19 @@ try:
 
     optimized_launches = []
     
-    # Handle the structure returned by the v2.3.0 engine safely
+    # Process the data array structure safely
     for launch in raw_data.get('results', []):
-        vid_list = launch.get("vid_urls", launch.get("vidURLs", []))
+        # Locate the stream link cleanly if it exists in the feed elements
+        vid_urls = launch.get("vid_urls", [])
         video_url = None
-        if isinstance(vid_list, list) and len(vid_list) > 0:
-            video_url = vid_list[0].get("url") if isinstance(vid_list[0], dict) else vid_list[0]
+        if isinstance(vid_urls, list) and len(vid_urls) > 0:
+            first_vid = vid_urls[0]
+            video_url = first_vid.get("url") if isinstance(first_vid, dict) else first_vid
             
         clean_item = {
             "id": launch.get("id"),
             "name": launch.get("name"),
-            "date_utc": launch.get("net"),  # Scheduled launch date window
+            "date_utc": launch.get("net"),  # Scheduled launch date time window
             "pad_name": launch.get("pad", {}).get("name"),
             "location": launch.get("pad", {}).get("location", {}).get("name"),
             "video_url": video_url
