@@ -17,7 +17,7 @@ jobs:
     - name: Fetch Global Launch Stream
       run: |
         curl -L -s -A "SpaceTrackerApp/1.0" \
-        "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=100&mode=normal&format=json" \
+        "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=100&mode=detailed&format=json" \
         -o launches.json
 
     - name: Commit and push updated launches.json file
