@@ -18,12 +18,10 @@ jobs:
       with:
         python-version: '3.x'
 
-    # CRITICAL FIX: Network downloading is handled via native terminal layer
-    - name: Download Raw Global Data Stream
+    # Pulls the next 5 global launches across all space agencies with zero security blocks
+    - name: Download Unrestricted Global Data Stream
       run: |
-        curl -L -s -A "SpaceTrackerApp/1.0 (GitHubActions; CoreEngine)" \
-        "https://thespacedevs.com" \
-        -o raw_launches.json
+        curl -s "https://fdo.rocketlaunch.live/json/launches/next/5" -o raw_launches.json
 
     - name: Process data structures
       run: python refresh.py
