@@ -13,11 +13,11 @@ jobs:
     - name: Checkout repository code
       uses: actions/checkout@v5
 
-    # The exact unspaced live production endpoint targeting 25 global monthly launches
+    # Native path routing prevents the server from issuing an HTML redirect
     - name: Fetch Global Launch Stream
       run: |
-        curl -L -s -A "SpaceTrackerApp/1.0 (GitHubActions; CoreEngine)" \
-        "https://thespacedevs.com" \
+        curl -L -s -A "SpaceTrackerApp/1.0" \
+        "https://ll.thespacedevs.com/2.3.0/launches/upcoming/?limit=100&mode=normal&format=json" \
         -o launches.json
 
     - name: Commit and push updated launches.json file
@@ -27,4 +27,3 @@ jobs:
         git add launches.json
         git diff-index --quiet HEAD || git commit -m "Automated update of global upcoming launches"
         git push
-
