@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>TheSpaceDevs - Home</title>
+    <link rel="shortcut icon" href="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+
+    <script type="text/javascript" src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/js/base.js"></script>
+    <script src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+    <script src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/js/moment-with-locales.js"></script>
+    <script src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/js/moment-timezone-with-data.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/css/custom.css">
+    
+<meta name="title" content="TheSpaceDevs - Home"/>
+<meta property="og:title" content="TheSpaceDevs - Home"/>
+<meta property="og:type" content="website"/>
+<meta name="description"
+      content="A group of space enthusiast developers working on services to improve accessibility of spaceflight information.">
+<meta property="og:description"
+      content="A group of space enthusiast developers working on services to improve accessibility of spaceflight information.">
+<meta property="og:url" content="https://thespacedevs.com"/>
+<meta property="og:image" content="https://thespacedevs.com/static/thespacedevs/images/tsd_seo.png"/>
+
+<meta property="og:site_name" content="TheSpaceDevs"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="TheSpaceDevs - Home">
+<meta name="twitter:description"
+      content="A group of space enthusiast developers working on services to improve accessibility of spaceflight information.">
+<meta name="twitter:image" content="https://thespacedevs.com/static/thespacedevs/images/tsd_seo.png"/>
+
+</head>
+<body>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/" style="padding:0; margin: 0 .5em 0 .5em;">
+        <p style="font-size:1.5em;margin: 0;padding: 0;font-weight: 600;">The Space Devs</p>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle Navbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    APIs
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="/llapi">Launch Library 2</a>
+                    <a class="dropdown-item" href="/snapi">Spaceflight News API</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Network
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="/networkpartners">Partners</a>
+                    <a class="dropdown-item" href="/networkusers">Users</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/supportus">
+                    Support Us
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link" href="/about">
+                    About
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.reddit.com/r/TheSpaceDevs">
+                    <div>
+                        <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/navbar/reddit.svg" class="hideinfoimg"/>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://discord.gg/p7ntkNA">
+                    <div>
+                        <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/navbar/discord.svg" class="hideinfoimg"/>
+                    </div>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" target="_blank" href="https://www.youtube.com/channel/UCCKiR4D6hbgk9lW9UwxZXxg">
+                    <div>
+                        <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/navbar/youtube.svg" class="hideinfoimg" style="padding:2px;"/>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="wrapper">
+    <div class="container main-body" style="padding-top: 2em;">
+        
+<div class="row">
+    
+<div class="row">
+    <div class="col-md-3">
+        <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/round_logo.svg" class="hideinfoimg" style="height: 100%;width: 100%;"/>
+    </div>
+    <div class="col-md-9 text-center" style="display: flex;">
+        <div>
+            <div class="row">
+                <div style="display: flex;margin: auto;flex-direction: column;vertical-align: middle;">
+                    <h1><b>The Space Devs</b></h1>
+                    <h4 style="margin-bottom: 1.5rem">
+                        Network & Public APIs
+                    </h4>
+                    <p>
+                        The Space Devs is a group of space enthusiast developers working on a range of services, united in a common goal to improve public knowledge and accessibility of spaceflight information. We aim to bring space app developers together into a thriving community by providing helpful data and tools, accessible to everyone for free.            </p>
+                </div>
+            </div>
+            <div class="row cardButtonsSmallMargin spaceEvenly" style="margin-top:1.25rem">
+                <div>
+                    <a class="btn btn-g4l-sln btn-block" href="https://discord.com/invite/p7ntkNA" role="button">
+                        <div class="box" style="display:flex;align-items:center;">
+                            <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/home_icons/discord.svg" style="height: 2em; width: 2em; margin-right:1em;"/>
+                            <span class="card-btn">Discord</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="btn btn-g4l-sln btn-block" href="https://twitter.com/TheSpaceDevs" role="button">
+                        <div class="box" style="display:flex;align-items:center;">
+                            <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/home_icons/twitter.svg" style="height: 2em; width: 2em; margin-right:1em;"/>
+                            <span class="card-btn">Twitter</span>
+                        </div>
+                    </a>
+                </div>
+                <div>
+                    <a class="btn btn-g4l-sln btn-block" href="https://www.patreon.com/TheSpaceDevs" role="button">
+                        <div class="box" style="display:flex;align-items:center;">
+                            <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/home_icons/patreon.svg" style="height: 2em; width: 2em; margin-right:1em;"/>
+                            <span class="card-btn">Patreon</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div class="row" style="margin-top:2rem;">
+    <div class="col-md-9">
+        
+<div>
+    
+
+
+<div class="card ">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <div class="d-md-block" style="height:100%;width:100%;">
+                    
+                        <div class="d-none d-md-block" style="height:100%;width:100%;background-image: url(https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg);background-size: cover;background-position: center;"></div><div class="d-md-none" style="overflow: hidden; text-align: center;"><img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/falcon_9_on_slc_image_20241024165956.jpg" style="width: 100%;"/></div>
+                    
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <div class="d-flex launchHeader">
+                        <div class="launchTitle">
+                            <h3 class="card-title font_size_poster" style="text-align:center;margin:0;">Falcon 9 Block 5 | NROL-179</h3>
+                        </div>
+                        <div class="launchStatus deactivate_on_tiny" style="flex-basis: 0;">
+                            <div>
+                                <span class="badge badge-success status-pills">Go</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="card-text" style="margin-top:0.25rem">
+                        <h5 class="lsp">SpaceX</h5>
+                    </div>
+                    
+                    <div class="card-text" style="text-align:center;margin-top:1.25rem;">
+                        <h6>Vandenberg SFB, CA, USA</h6>
+                        <h6>Space Launch Complex 4E</h6>
+                    </div>
+                    <div class="card-text" style="text-align:left;margin-top:1.25rem;max-height:10rem;overflow-y:auto;">
+                        <p>Fourteenth batch of satellites for a reconnaissance satellite constellation built by SpaceX and Northrop Grumman for the National Reconnaissance Office to provide imaging and other reconnaissance capabilities.</p>
+                    </div>
+                    
+                    
+
+
+<div class="row d-flex justify-content-center countdown-block" style="margin-top:0.25rem;">
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="launchtime_falcon-9-block-5-nrol-179">T?</h2>
+    </div>
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="days_falcon-9-block-5-nrol-179">--</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2>:</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2 id="hours_falcon-9-block-5-nrol-179">--</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2>:</h2>
+    </div>
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="mins_falcon-9-block-5-nrol-179">--</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2>:</h2>
+    </div>
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="secs_falcon-9-block-5-nrol-179">--</h2>
+    </div>
+</div>
+<div class="row d-flex justify-content-center" style="text-align:center;">
+    <h5 class="deactivate_on_tiny" id="date_falcon-9-block-5-nrol-179">Date Loading...</h5>
+</div>
+<script>
+    
+        setLaunchCountdown("", "launchtime_falcon-9-block-5-nrol-179", "days_falcon-9-block-5-nrol-179", "hours_falcon-9-block-5-nrol-179", "mins_falcon-9-block-5-nrol-179", "secs_falcon-9-block-5-nrol-179", "date_falcon-9-block-5-nrol-179", '2026-06-19 08:40:00 +0000', 1, true);
+    
+</script>
+                    
+                    <div class="row cardButtonsSmallMargin spaceEvenly" style="margin-top:1.25rem">
+                        
+                        <div class="row d-flex justify-content-center">
+                            <a href="https://x.com/i/broadcasts/1dGYllVmbpAKX" class="btn btn-primary deactivate_on_tiny" target="_blank">
+                                <div class="box" style="display:flex;align-items:center;color: red;">
+                                    <i class="material-icons deactivate_on_tiny" style="padding-right: 0.25em;font-size: 2.5em;">play_circle_filled</i>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a class="btn btn-g4l-sln btn-block" href="https://go4liftoff.com/launch/id/5d4099bf-a0be-4f54-b236-b6ab3aed4146" role="button">
+                                <div class="box" style="display:flex;align-items:center;">
+                                    <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/g4l_patch.svg" style="height: 2.5em; width: 2.5em; margin-right:1em;"/>
+                                    <span class="card-btn">Go4Liftoff</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="btn btn-g4l-sln btn-block" href="https://spacelaunchnow.me/launch/falcon-9-block-5-nrol-179/" role="button">
+                                <div class="box" style="display:flex;align-items:center;">
+                                    <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/sln_logo.svg" style="height: 2.5em; width: 2.5em; margin-right:1em;"/>
+                                    <span class="card-btn">Space Launch Now</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div style="margin-top: 1rem;">
+    
+
+
+
+<div class="card ">
+    <div class="row no-gutters">
+        <div class="col-md-4">
+            <div class="d-md-block" style="height:100%;width:100%;">
+                <div class="d-none d-md-block" style="height:100%;width:100%;background-image: url(https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/us2520eva-52_image_20190318200748.jpeg);background-size: cover;background-position: center;"></div><div class="d-md-none" style="overflow: hidden; text-align: center;"><img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/media/images/us2520eva-52_image_20190318200748.jpeg" style="width: 100%;"/></div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="card-body text-center">
+                <h3 class="card-title font_size_poster" style="text-align:center;margin:0;">US EVA-95</h3>
+                <div class="card-text" style="margin-top:0.25rem">
+                    <h5 class="lsp">National Aeronautics and Space Administration</h5>
+                </div>
+            
+                    <div class="card-text" style="text-align:center;margin-top:1.25rem;">
+                        <h6>International Space Station</h6>
+                    </div>
+                    <div class="card-text" style="text-align:left;margin-top:1.25rem;max-height:10rem;overflow-y:auto;">
+                        <p>Two astronauts will replace a high-definition camera on camera port 3, install a new navigational aid for visiting spacecraft, called a planar reflector, on the Harmony module’s forward port, and relocate an early ammonia servicer jumper — a flexible hose assembly that connects parts of a fluid system — along with other jumpers on the station’s S6 and S4 truss.</p>
+                    </div>
+            
+                
+
+
+<div class="row d-flex justify-content-center countdown-block" style="margin-top:0.25rem;">
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="launchtime_us-eva-95">T?</h2>
+    </div>
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="days_us-eva-95">--</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2>:</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2 id="hours_us-eva-95">--</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2>:</h2>
+    </div>
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="mins_us-eva-95">--</h2>
+    </div>
+    <div style="text-align:center;margin: 1%;">
+        <h2>:</h2>
+    </div>
+    <div  style="text-align:center;margin: 1%;">
+        <h2 id="secs_us-eva-95">--</h2>
+    </div>
+</div>
+<div class="row d-flex justify-content-center" style="text-align:center;">
+    <h5 class="deactivate_on_tiny" id="date_us-eva-95">Date Loading...</h5>
+</div>
+<script>
+    
+        setLaunchCountdown("", "launchtime_us-eva-95", "days_us-eva-95", "hours_us-eva-95", "mins_us-eva-95", "secs_us-eva-95", "date_us-eva-95", '2026-06-30 00:00:00 +0000', 1, true);
+    
+</script>
+                
+                    <div class="row cardButtonsSmallMargin spaceEvenly" style="margin-top:1.25rem">
+                        
+                        <div class="row d-flex justify-content-center">
+                            <a href="https://www.youtube.com/watch?v=D0dd8X4g3Eg" class="btn btn-primary deactivate_on_tiny" target="_blank">
+                                <div class="box" style="display:flex;align-items:center;color: red;">
+                                    <i class="material-icons deactivate_on_tiny" style="padding-right: 0.25em;font-size: 2.5em;">play_circle_filled</i>
+                                </div>
+                            </a>
+                        </div>
+                        
+                        <div>
+                            <a class="btn btn-g4l-sln btn-block" href="https://go4liftoff.com/event/id/1309" role="button">
+                                <div class="box" style="display:flex;align-items:center;">
+                                    <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/g4l_patch.svg" style="height: 2.5em; width: 2.5em; margin-right:1em;"/>
+                                    <span class="card-btn">Go4Liftoff</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div>
+                            <a class="btn btn-g4l-sln btn-block" href="https://spacelaunchnow.me/event/us-eva-95/" role="button">
+                                <div class="box" style="display:flex;align-items:center;">
+                                    <img src="https://thespacedevs-prod.nyc3.digitaloceanspaces.com/static/home/thespacedevs/images/sln_logo.svg" style="height: 2.5em; width: 2.5em; margin-right:1em;"/>
+                                    <span class="card-btn">Space Launch Now</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<script>
+    setLaunchCountdown("", "launchtime", "days", "hours", "mins", "secs", "date", '2026-06-19 08:40:00 +0000', 1);
+    setLaunchCountdown("", "eventtime", "eventdays", "eventhours", "eventmins", "eventsecs", "eventdate", '2026-06-30 00:00:00 +0000', 1);
+</script>
+
+    </div>
+    <div class="col-md-3">
+        <div class="news-col">
+    
+    <a href="https://spacenews.com/upgraded-ariane-6-launches-amazon-leo-satellites/" style="display: block;">
+        <div class="card news-item-card" style="background-image: url('https://i0.wp.com/spacenews.com/wp-content/uploads/2026/06/va269.jpeg?fit=1024%2C679&amp;ssl=1');">
+            <div class="news-item-card-text" style="display: flex; flex-direction: column">
+                <div style="flex: 1">
+                    <h5 style="flex: 1">Upgraded Ariane 6 launches Amazon Leo satellites</h5>
+                </div>
+                <h6 style="margin: 0;">
+                    SpaceNews
+                </h6>
+            </div>
+        </div>
+    </a>
+    
+    <a href="https://www.esa.int/ESA_Multimedia/Videos/2026/06/Ariane_6_flight_VA269_-_full_replay" style="display: block;">
+        <div class="card news-item-card" style="background-image: url('https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/06/ariane_6_flight_va269_-_full_replay/27334099-1-eng-GB/Ariane_6_flight_VA269_-_full_replay_card_full.jpg');">
+            <div class="news-item-card-text" style="display: flex; flex-direction: column">
+                <div style="flex: 1">
+                    <h5 style="flex: 1">Ariane 6 flight VA269 - full replay</h5>
+                </div>
+                <h6 style="margin: 0;">
+                    ESA
+                </h6>
+            </div>
+        </div>
+    </a>
+    
+    <a href="https://www.esa.int/ESA_Multimedia/Videos/2026/06/347th_ESA_Council_Media_information_session" style="display: block;">
+        <div class="card news-item-card" style="background-image: url('https://www.esa.int/var/esa/storage/images/esa_multimedia/videos/2026/06/347th_esa_council_media_information_session/27332412-3-eng-GB/347th_ESA_Council_Media_information_session_card_full.jpg');">
+            <div class="news-item-card-text" style="display: flex; flex-direction: column">
+                <div style="flex: 1">
+                    <h5 style="flex: 1">347th ESA Council: Media information session</h5>
+                </div>
+                <h6 style="margin: 0;">
+                    ESA
+                </h6>
+            </div>
+        </div>
+    </a>
+    
+    <a href="https://www.nasa.gov/image-article/hubble-sees-swarm-of-galaxies/" style="display: block;">
+        <div class="card news-item-card" style="background-image: url('https://www.nasa.gov/wp-content/uploads/2026/06/macs0329-0211-sky-sreg-flat-final.jpg');">
+            <div class="news-item-card-text" style="display: flex; flex-direction: column">
+                <div style="flex: 1">
+                    <h5 style="flex: 1">Hubble Sees Swarm of Galaxies</h5>
+                </div>
+                <h6 style="margin: 0;">
+                    NASA
+                </h6>
+            </div>
+        </div>
+    </a>
+    
+</div>
+
+    </div>
+</div>
+
+    </div>
+    <footer class="footer mt-auto py-3" style="padding: 15px 15px!important;margin-top:2%!important;">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <a href="/privacy">Privacy Policy</a>
+            </div>
+            <div class="col-md-4 text-center">
+                <p><a href="/cdn-cgi/l/email-protection#99eaece9e9f6ebedd9edf1fceae9f8fafcfdfcefeab7faf6f4"><span class="__cf_email__" data-cfemail="8bf8fefbfbe4f9ffcbffe3eef8fbeae8eeefeefdf8a5e8e4e6">[email&#160;protected]</span></a></p>
+            </div>
+            <div class="col-md-4 text-right">
+                <span class="text-muted">
+                    <div class="box" style="display:flex;align-items:center;justify-content: flex-end;">
+                         <i class="material-icons" style="padding-right: 0.25em;">copyright</i>
+                         <span>2020-2026 Copyright TheSpaceDevs</span>
+                    </div>
+                </span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</div>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+<script>
+    $( document ).ready(function() {
+        localDateTimeFormat();
+        localDateFormat();
+    });
+    $(".hideinfoimg").mousedown(function(e){
+        e.preventDefault();
+    });
+    $(".hideinfoimg").on("contextmenu", function(e){
+        return false;
+    });
+</script>
+</html>
