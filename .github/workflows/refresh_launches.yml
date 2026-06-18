@@ -1,7 +1,10 @@
 name: Daily Space Launch Data Sync
 
 on:
-  workflow_dispatch:
+  schedule:
+    # 💡 AUTOMATION TRIGGER: Runs automatically every single day at 06:00 UTC (1:00 AM Madison local time)
+    - cron: '0 6 * * *'
+  workflow_dispatch: # Keeps the manual play button in the GitHub dashboard as a backup
 
 permissions:
   contents: write
