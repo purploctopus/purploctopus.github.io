@@ -27,7 +27,7 @@ jobs:
     - name: Fetch Active Astronauts Stream
       run: |
         curl -L -s -A "SpaceTrackerApp/1.0" \
-        "https://ll.thespacedevs.com/2.3.0/astronauts/?in_flight=true&limit=100&mode=normal&format=json" \
+        "https://ll.thespacedevs.com/2.3.0/astronauts/?in_space=true&limit=100&mode=normal&format=json" \
         -o astronauts.json
 
     - name: Commit and push updated JSON data files
