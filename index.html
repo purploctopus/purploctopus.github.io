@@ -151,6 +151,46 @@
               from { opacity: 0; transform: translateY(30px); }
               to { opacity: 1; transform: translateY(0); }
           }
+          /* 📱 NATIVE MOBILE RESPONSIVE ENGINE REWRITES */
+          @media (max-width: 768px) {
+              /* 1. Scale down massive typography */
+              h1 { font-size: 2rem; }
+              p.pitch { font-size: 1.1rem; }
+              
+              /* 2. Tighten the glass container layout bounds */
+              .boxed-content {
+                  padding: 1.5rem;
+                  border-radius: 20px;
+              }
+              
+              /* 3. Collapse the brand header container layout */
+              .site-header {
+                  flex-direction: column;
+                  padding: 1.5rem 1rem;
+                  gap: 0.5rem;
+              }
+              
+              /* 4. Fix horizontal screen overflow clipping on the screenshots */
+              .screenshots img {
+                  max-width: 45%; /* Shows two screenshots cleanly side-by-side */
+              }
+              
+              /* 5. FIX THE STICKY NAV: Converts it into a horizontally scrollable thumb track */
+              nav.app-thumbs {
+                  justify-content: flex-start;
+                  gap: 1rem;
+                  padding: 0.8rem 1rem;
+                  overflow-x: auto; /* Allows smooth swipe gestures */
+                  -webkit-overflow-scrolling: touch;
+              }
+              /* Hide desktop scrollbars inside the track to keep the look clean */
+              nav.app-thumbs::-webkit-scrollbar { display: none; }
+              nav.app-thumbs img {
+                  width: 48px; height: 48px; /* Slightly smaller for thumbs targets */
+                  border-radius: 10px;
+                  flex-shrink: 0; /* Stops the browser engine from squeezing the icons */
+              }
+          }
       </style>
 
 </head>
