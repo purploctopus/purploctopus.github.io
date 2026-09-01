@@ -16,6 +16,17 @@
   <meta name="description" content="PurplOctopus apps: OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
   <title>PurplOctopus Apps</title>
   <link rel="icon" type="image/png" href="purplOctopusLogo1.png">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:title" content="PurplOctopus Apps">
+  <meta property="og:description" content="OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="purplOctopusLogo1.png"> <!-- TODO: swap in a 1200x630 social preview image for best results -->
+  <meta property="og:url" content="REPLACE_WITH_YOUR_SITE_URL">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PurplOctopus Apps">
+  <meta name="twitter:description" content="OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
+  <meta name="twitter:image" content="purplOctopusLogo1.png">
       <style>
           html { scroll-behavior: smooth; }
           body {
@@ -51,7 +62,7 @@
           /* Sections - Wider Layout */
           section.app-section { padding: 5rem 1rem; }
           
-          h1 {
+          h1, h2 {
               font-size: 3rem;
               font-weight: 800;
               letter-spacing: -0.03em; /* Tighter tracking for premium headers */
@@ -154,7 +165,7 @@
           /* 📱 NATIVE MOBILE RESPONSIVE ENGINE REWRITES */
           @media (max-width: 768px) {
               /* 1. Scale down massive typography */
-              h1 { font-size: 2rem; }
+              h1, h2 { font-size: 2rem; }
               p.pitch { font-size: 1.1rem; }
               
               /* 2. Tighten the glass container layout bounds */
@@ -205,7 +216,7 @@
         <a href="#orbitlog"><img src="orbitLogIcon.png" alt="OrbitLog: Space Tracker Hub"></a>
         <a href="#dj-never-stops"><img src="djNeverStops.png" alt="The DJ That Never Stops"></a>
         <a href="#math-battle"><img src="mathbattle-icon.png" alt="Math Battle"></a>
-        <a href="#math-battle+&-"><img src="MBGoAaS.png" alt="Math Battle +&-"></a>
+        <a href="#math-battle-plus-minus"><img src="MBGoAaS.png" alt="Math Battle +&amp;-"></a>
         <a href="#quiet-mind"><img src="quietmind-icon.png" alt="Quiet Mind"></a>
         <a href="#space-debris-inc"><img src="space-icon.png" alt="Space Debris Inc."></a>
         <a href="#tranquil-escape"><img src="tranquil-icon.png" alt="Tranquil Escape"></a>
@@ -213,8 +224,8 @@
     <!-- OrbitLog -->
     <section id="orbitlog" class="app-section">
       <section class="boxed-content">
-      <h1>OrbitLog: Space Tracker Hub</h1>
-      <h2>The Entire Sky, Localized to Your Horizon.</h2>
+      <h2>OrbitLog: Space Tracker Hub</h2>
+      <h3>The Entire Sky, Localized to Your Horizon.</h3>
         <p>Turn your device into a complete space tracking command center. OrbitLog is a clean, simple app designed to view the live nights sky via AR, track satellites over your house, view view upcoming rocket launches, follow astronauts in space, and monitor approaching asteroids.</p>
 
         <p>Track the skies with absolute engineering precision. Access real-time data loops across multiple orbital platforms, inspect mission profiles, stream live launches, and monitor deep-space cosmic occurrences straight from a technical dashboard interface inspired by official mission control rooms.</p>
@@ -229,10 +240,10 @@
         </a>
 
         <div class="screenshots">
-          <img src="orbit1.png" alt="Screenshot 1" onclick="openPopup(this)">
-          <img src="orbit2.png" alt="Screenshot 2" onclick="openPopup(this)">
-          <img src="orbit3.png" alt="Screenshot 3" onclick="openPopup(this)">
-          <img src="orbit4.png" alt="Screenshot 4" onclick="openPopup(this)">
+          <img src="orbit1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit2.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit3.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit4.png" alt="Screenshot 4" onclick="openPopup(this)" loading="lazy">
         </div>
 
         <h3>Features</h3>
@@ -252,11 +263,12 @@
                 allowfullscreen></iframe>
             </div>
       </section>
+    </section>
 
     <!-- Math Battle -->
     <section id="dj-never-stops" class="app-section">
       <section class="boxed-content">
-        <h1>The DJ That Never Stops</h1>
+        <h2>The DJ That Never Stops</h2>
         <p class="pitch">Mainstage EDM Idle Adventure</p>
         <h2>Master the mainstage!</h2>
         <p>Long‑press the drops, slide the faders, and tap the beat to build global hype. <strong>The DJ That Never Stops</strong> is an EDM‑fueled idle adventure where your rise to superstardom begins with a single track and grows into a world‑tour phenomenon.</p>
@@ -276,9 +288,9 @@
         </a>
 
         <div class="screenshots">
-          <img src="dj1.png" alt="Screenshot 1" onclick="openPopup(this)">
-          <img src="dj3.png" alt="Screenshot 2" onclick="openPopup(this)">
-          <img src="dj2.png" alt="Screenshot 3" onclick="openPopup(this)">
+          <img src="dj1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
+          <img src="dj3.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
+          <img src="dj2.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
         </div>
         <h3>Features</h3>
           <p><strong>Active Rhythm Gameplay:</strong> Long‑press bars, slide faders, and tap beats for big multipliers.</p>
@@ -299,7 +311,7 @@
   <!-- Math Battle -->
   <section id="math-battle" class="app-section">
     <section class="boxed-content">
-      <h1>Math Battle: Heroes of × & ÷</h1>
+      <h2>Math Battle: Heroes of × & ÷</h2>
       <p class="pitch">Turn math into a battle! Practice multiplication & division while having fun.</p>
       <h2>Sharpen Your Skills with Math Battle</h2>
       <p>Sharpen your Multiplication & Division math skills while unleashing epic attacks!</p>
@@ -313,9 +325,9 @@
       </a>
       
       <div class="screenshots">
-        <img src="battle1.png" alt="Screenshot 1" onclick="openPopup(this)">
-        <img src="upgradeYourHero1.png" alt="Screenshot 2" onclick="openPopup(this)">
-        <img src="battle2.png" alt="Screenshot 3" onclick="openPopup(this)">
+        <img src="battle1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
+        <img src="upgradeYourHero1.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
+        <img src="battle2.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
       </div>
       <h3>Features</h3>
       <p><strong>Epic Math Battles:</strong> Defeat enemies by solving problems quickly and accurately.</p>
@@ -333,9 +345,9 @@
     </section>
   </section>
   <!-- Math Battle +&- -->
-  <section id="math-battle+&-" class="app-section">
+  <section id="math-battle-plus-minus" class="app-section">
     <section class="boxed-content">
-      <h1>Math Battle: Guardians of + & -</h1>
+      <h2>Math Battle: Guardians of + & -</h2>
       <p class="pitch">Turn math into a battle! Practice addition & subtraction while having fun.</p>
       <h2>Sharpen Your Skills with Math Battle</h2>
       <p>Sharpen your addition & subtraction math skills while unleashing epic attacks!</p>
@@ -349,9 +361,9 @@
       </a>
       
       <div class="screenshots">
-        <img src="mbas1.png" alt="Screenshot 1" onclick="openPopup(this)">
-        <img src="mbas3.png" alt="Screenshot 2" onclick="openPopup(this)">
-        <img src="mbas2.png" alt="Screenshot 3" onclick="openPopup(this)">
+        <img src="mbas1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
+        <img src="mbas3.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
+        <img src="mbas2.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
       </div>
       <h3>Features</h3>
       <p><strong>Epic Math Battles:</strong> Defeat enemies by solving problems quickly and accurately.</p>
@@ -371,7 +383,7 @@
   <!-- Quiet Mind -->
   <section id="quiet-mind" class="app-section">
     <section class="boxed-content">
-      <h1>Quiet Mind</h1>
+      <h2>Quiet Mind</h2>
       <p class="pitch">Guided meditations with soothing visuals and soundscapes.</p>
       <p>Elevate your meditation practice with Quiet Mind, a beautifully simple timer and tracker designed to help you build consistency, deepen focus, and unlock your inner calm.</p>
       
@@ -385,11 +397,11 @@
       </a>
       
       <div class="screenshots">
-        <img src="qm1.png" alt="Quiet Mind screenshot 1" onclick="openPopup(this)">
-        <img src="qm2.png" alt="Quiet Mind screenshot 2" onclick="openPopup(this)">
-        <img src="qm3.png" alt="Quiet Mind screenshot 3" onclick="openPopup(this)">
-        <img src="qm4.png" alt="Quiet Mind screenshot 4" onclick="openPopup(this)">
-        <img src="qm5.png" alt="Quiet Mind screenshot 5" onclick="openPopup(this)">
+        <img src="qm1.png" alt="Quiet Mind screenshot 1" onclick="openPopup(this)" loading="lazy">
+        <img src="qm2.png" alt="Quiet Mind screenshot 2" onclick="openPopup(this)" loading="lazy">
+        <img src="qm3.png" alt="Quiet Mind screenshot 3" onclick="openPopup(this)" loading="lazy">
+        <img src="qm4.png" alt="Quiet Mind screenshot 4" onclick="openPopup(this)" loading="lazy">
+        <img src="qm5.png" alt="Quiet Mind screenshot 5" onclick="openPopup(this)" loading="lazy">
       </div>
     </section>
   </section>
@@ -397,7 +409,7 @@
   <!-- Space Debris Inc. -->
   <section id="space-debris-inc" class="app-section">
     <section class="boxed-content">
-      <h1>Space Debris Inc.</h1>
+      <h2>Space Debris Inc.</h2>
       <p class="pitch">The Space Debris Cleanup Game</p>
       <p>Space Debris Inc is a casual, fun, space debris cleanup game. The more you cleanup the more Creds you earn which in turn can be used to buy better equipment and grow your company. Can you become the #1 space junker in the galaxy?</p>
 
@@ -408,11 +420,11 @@
       </a>
       
       <div class="screenshots">
-        <img src="sdi6.png" alt="Space Debris Inc screenshot 1" onclick="openPopup(this)">
-        <img src="sdi2.png" alt="Space Debris Inc screenshot 2" onclick="openPopup(this)">
-        <img src="sdi3.png" alt="Space Debris Inc screenshot 3" onclick="openPopup(this)">
-        <img src="sdi4.png" alt="Space Debris Inc screenshot 4" onclick="openPopup(this)">
-        <img src="sdi5.png" alt="Space Debris Inc screenshot 5" onclick="openPopup(this)">
+        <img src="sdi6.png" alt="Space Debris Inc screenshot 1" onclick="openPopup(this)" loading="lazy">
+        <img src="sdi2.png" alt="Space Debris Inc screenshot 2" onclick="openPopup(this)" loading="lazy">
+        <img src="sdi3.png" alt="Space Debris Inc screenshot 3" onclick="openPopup(this)" loading="lazy">
+        <img src="sdi4.png" alt="Space Debris Inc screenshot 4" onclick="openPopup(this)" loading="lazy">
+        <img src="sdi5.png" alt="Space Debris Inc screenshot 5" onclick="openPopup(this)" loading="lazy">
       </div>
 
     </section>
@@ -421,7 +433,7 @@
   <!-- Tranquil Escape -->
   <section id="tranquil-escape" class="app-section">
     <section class="boxed-content">
-      <h1>Tranquil Escape</h1>
+      <h2>Tranquil Escape</h2>
       <p class="pitch">Increase your productivity and enhance your calm.</p>
       <p>Increase your productivity and enhance your calm with tranquil sounds to relax you and white noises to drown out all those stressful distractions.  From calming waterfalls, owls singing in the night to various white noises, this application tries to bring all the calming sounds of this world to your device.</p>
 
@@ -432,10 +444,10 @@
       </a>
       
       <div class="screenshots">
-        <img src="te1.png" alt="Tranquil Escape screenshot 1" onclick="openPopup(this)">
-        <img src="te2.png" alt="Tranquil Escape screenshot 2" onclick="openPopup(this)">
-        <img src="te3.png" alt="Tranquil Escape screenshot 3" onclick="openPopup(this)">
-        <img src="te4.png" alt="Tranquil Escape screenshot 4" onclick="openPopup(this)">
+        <img src="te1.png" alt="Tranquil Escape screenshot 1" onclick="openPopup(this)" loading="lazy">
+        <img src="te2.png" alt="Tranquil Escape screenshot 2" onclick="openPopup(this)" loading="lazy">
+        <img src="te3.png" alt="Tranquil Escape screenshot 3" onclick="openPopup(this)" loading="lazy">
+        <img src="te4.png" alt="Tranquil Escape screenshot 4" onclick="openPopup(this)" loading="lazy">
       </div>
       <div class="video-container">
         <iframe src="https://www.youtube.com/embed/KXyFm-8_MeA"
@@ -450,9 +462,11 @@
     <img src="purplOctopusLogo1.png" alt="PurplOctopus Logo" class="logo-pin" />
     <span>© 2026 PurplOctopus</span>
   </footer>
-  <!-- Popup container (only one needed) -->
+  <!-- Popup / lightbox container (single, corrected implementation) -->
   <div id="popup" class="popup" onclick="closePopup()">
-    <img id="popup-img" src="" alt="Expanded view">
+    <div class="popup-box">
+      <img id="popup-img" src="" alt="Expanded view">
+    </div>
   </div>
 
   <style>
@@ -460,59 +474,47 @@
     cursor: pointer;
   }
 
-<!-- Popup container (only one needed, place once before </body>) -->
-<div id="popup" class="popup" onclick="closePopup()">
-<div class="popup-box">
-  <img id="popup-img" src="" alt="Expanded view">
-</div>
-</div>
+  /* Fullscreen overlay */
+  .popup {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.3); /* subtle dim */
+    justify-content: center;
+    align-items: center;
+  }
 
-<style>
-.screenshots img {
-cursor: pointer;
-}
+  /* Glassy box in the center */
+  .popup-box {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    padding: 0.5rem;
+  }
 
-/* Fullscreen overlay */
-.popup {
-display: none;
-position: fixed;
-z-index: 2000;
-top: 0; left: 0;
-width: 100%; height: 100%;
-background: rgba(0,0,0,0.3); /* subtle dim */
-justify-content: center;
-align-items: center;
-}
+  .popup-box img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 12px;
+    display: block;
+  }
+  </style>
 
-/* Glassy box in the center */
-.popup-box {
-background: rgba(255,255,255,0.15);
-backdrop-filter: blur(12px);
--webkit-backdrop-filter: blur(12px);
-border-radius: 16px;
-border: 1px solid rgba(255,255,255,0.3);
-box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-padding: 0.5rem;
-}
-
-.popup-box img {
-max-width: 90vw;
-max-height: 90vh;
-border-radius: 12px;
-}
-</style>
-
-<script>
-function openPopup(img) {
-const popup = document.getElementById("popup");
-const popupImg = document.getElementById("popup-img");
-popupImg.src = img.src;
-popup.style.display = "flex"; // flex centers it
-}
-function closePopup() {
-document.getElementById("popup").style.display = "none";
-}
-    
-</script>
+  <script>
+  function openPopup(img) {
+    const popup = document.getElementById("popup");
+    const popupImg = document.getElementById("popup-img");
+    popupImg.src = img.src;
+    popup.style.display = "flex"; // flex centers it
+  }
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+  </script>
 </body>
 </html>
