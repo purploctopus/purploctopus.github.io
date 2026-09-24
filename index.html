@@ -21,12 +21,12 @@
   <meta property="og:title" content="PurplOctopus Apps">
   <meta property="og:description" content="OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="purplOctopusLogo1.png"> <!-- TODO: swap in a 1200x630 social preview image for best results -->
-  <meta property="og:url" content="REPLACE_WITH_YOUR_SITE_URL">
-  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image" content="https://purploctopus.github.io/purplOctopusLogo1.png">
+  <meta property="og:url" content="https://purploctopus.github.io/">
+  <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="PurplOctopus Apps">
   <meta name="twitter:description" content="OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
-  <meta name="twitter:image" content="purplOctopusLogo1.png">
+  <meta name="twitter:image" content="https://purploctopus.github.io/purplOctopusLogo1.png">
       <style>
           html { scroll-behavior: smooth; }
           body {
@@ -158,6 +158,44 @@
               margin: 4rem auto;
           }
 
+          /* Header YouTube link */
+          .yt-link {
+              margin-left: auto;
+              display: inline-flex; align-items: center; gap: 0.5rem;
+              padding: 0.6rem 1.3rem;
+              border-radius: 980px;
+              background: #000; color: #fff;
+              text-decoration: none; font-weight: 600; font-size: 0.95rem;
+              transition: all 0.3s ease;
+          }
+          .yt-link:hover { background: #333; transform: scale(1.03); }
+
+          /* "NEW" badge on nav icons */
+          nav.app-thumbs a { position: relative; flex-shrink: 0; }
+          .new-badge {
+              position: absolute; top: -6px; right: -10px;
+              background: #ff2d95; color: #fff;
+              font-size: 0.65rem; font-weight: 800; letter-spacing: 0.04em;
+              padding: 2px 6px; border-radius: 980px;
+              box-shadow: 0 4px 10px rgba(255,45,149,0.4);
+              pointer-events: none;
+          }
+
+          /* Small text link under App Store badges */
+          .fine-link { display: block; margin-top: 0.5rem; font-size: 0.9rem; color: #424245; }
+
+          /* Footer */
+          .site-footer {
+              display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+              gap: 1rem 1.5rem;
+              padding: 2.5rem 1rem 3rem;
+              color: #424245; font-size: 0.95rem;
+              border-top: 1px solid rgba(0,0,0,0.06);
+          }
+          .site-footer .logo-pin { height: 36px; }
+          .site-footer a { color: #424245; text-decoration: underline; }
+          .site-footer a:hover { color: #000; }
+
           @keyframes fadeInUp {
               from { opacity: 0; transform: translateY(30px); }
               to { opacity: 1; transform: translateY(0); }
@@ -175,6 +213,8 @@
               }
               
               /* 3. Collapse the brand header container layout */
+              .yt-link { margin-left: 0; }
+              .new-badge { top: -4px; right: -6px; font-size: 0.55rem; }
               .site-header {
                   flex-direction: column;
                   padding: 1.5rem 1rem;
@@ -210,11 +250,12 @@
     <header class="site-header">
         <img src="purplOctopusLogo1.png" alt="PurplOctopus Logo" class="logo-pin" />
       <h1>Apps by PurplOctopus</h1>
+      <a class="yt-link" href="https://www.youtube.com/channel/UCK5UIQfrHLjHQGsaJb1O1qg" target="_blank" rel="noopener">▶ Watch on YouTube</a>
     </header>
   <!-- Top Thumbnails -->
     <nav class="app-thumbs">
         <a href="#orbitlog"><img src="orbitLogIcon.png" alt="OrbitLog: Space Tracker Hub"></a>
-        <a href="#dj-never-stops"><img src="djNeverStops.png" alt="The DJ That Never Stops"></a>
+        <a href="#dj-never-stops"><img src="djNeverStops.png" alt="The DJ That Never Stops"><span class="new-badge">NEW</span></a>
         <a href="#math-battle"><img src="mathbattle-icon.png" alt="Math Battle"></a>
         <a href="#math-battle-plus-minus"><img src="MBGoAaS.png" alt="Math Battle +&amp;-"></a>
         <a href="#quiet-mind"><img src="quietmind-icon.png" alt="Quiet Mind"></a>
@@ -226,7 +267,7 @@
       <section class="boxed-content">
       <h2>OrbitLog: Space Tracker Hub</h2>
       <h3>The Entire Sky, Localized to Your Horizon.</h3>
-        <p>Turn your device into a complete space tracking command center. OrbitLog is a clean, simple app designed to view the live nights sky via AR, track satellites over your house, view view upcoming rocket launches, follow astronauts in space, and monitor approaching asteroids.</p>
+        <p>Turn your device into a complete space tracking command center. OrbitLog is a clean, simple app designed to view the live night sky via AR, track satellites over your house, view upcoming rocket launches, follow astronauts in space, and monitor approaching asteroids.</p>
 
         <p>Track the skies with absolute engineering precision. Access real-time data loops across multiple orbital platforms, inspect mission profiles, stream live launches, and monitor deep-space cosmic occurrences straight from a technical dashboard interface inspired by official mission control rooms.</p>
 
@@ -240,10 +281,10 @@
         </a>
 
         <div class="screenshots">
-          <img src="orbit1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
-          <img src="orbit2.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
-          <img src="orbit3.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
-          <img src="orbit4.png" alt="Screenshot 4" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit1.png" alt="OrbitLog screenshot 1" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit2.png" alt="OrbitLog screenshot 2" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit3.png" alt="OrbitLog screenshot 3" onclick="openPopup(this)" loading="lazy">
+          <img src="orbit4.png" alt="OrbitLog screenshot 4" onclick="openPopup(this)" loading="lazy">
         </div>
 
         <h3>Features</h3>
@@ -259,24 +300,22 @@
             <div class="video-container">
               <iframe src="https://www.youtube-nocookie.com/embed/5IhwpaocaGc"
                 title="StarGaze Demo"
+                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
       </section>
     </section>
 
-    <!-- Math Battle -->
+    <!-- The DJ That Never Stops -->
     <section id="dj-never-stops" class="app-section">
       <section class="boxed-content">
         <h2>The DJ That Never Stops</h2>
-        <p class="pitch">Mainstage EDM Idle Adventure</p>
-        <h2>Master the mainstage!</h2>
-        <p>Long‑press the drops, slide the faders, and tap the beat to build global hype. <strong>The DJ That Never Stops</strong> is an EDM‑fueled idle adventure where your rise to superstardom begins with a single track and grows into a world‑tour phenomenon.</p>
+        <p class="pitch">EDM Idle Tycoon: From Basement Party to World Tour</p>
+        <h3>Master the mainstage!</h3>
+        <p>Start with a single Rave set at a basement party and build your way to packed clubs around the world. <strong>The DJ That Never Stops</strong> is an EDM‑fueled idle tycoon where every genre you unlock, every upgrade you grab, and every beat drop grows your crowd and your cash.</p>
 
-        <p>Upgrade your local club into a proper mainstage as you build your legacy, unlock new countries, and upgrade your gear. Whether you’re actively dropping the perfect beat or letting your career climb while you’re away, your journey never stops.</p>
-
-        <p>Your mainstage moment is waiting.<br>
-        <strong>Start your journey. Become the superstar.</strong></p>
+        <p>Unlock new genres, hire roadies to keep the party going, and build the hype for massive beat drops. When your club is maxed out, take your set on a world tour: each new country brings bigger permanent multipliers and fresh genres to master. And because the beat never stops, your crew keeps earning even while you’re away.</p>
 
         <a href="https://apps.apple.com/us/app/the-dj-that-never-stops/id6760766616?itscg=30200&itsct=apps_box_badge&mttnsubad=6760766616"
            style="display: inline-block;"
@@ -286,23 +325,27 @@
                  alt="Download on the App Store"
                  style="width: 246px; height: 82px; vertical-align: middle; object-fit: contain;" />
         </a>
+        <a class="fine-link" href="privacyPolicyDJ.html">Privacy policy</a>
 
         <div class="screenshots">
-          <img src="dj1.jpeg" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
-          <img src="dj3.jpeg" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
-          <img src="dj2.jpeg" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
+          <img src="dj1.jpeg" alt="The DJ That Never Stops gameplay screenshot 1" onclick="openPopup(this)" loading="lazy">
+          <img src="dj3.jpeg" alt="The DJ That Never Stops gameplay screenshot 2" onclick="openPopup(this)" loading="lazy">
+          <img src="dj2.jpeg" alt="The DJ That Never Stops gameplay screenshot 3" onclick="openPopup(this)" loading="lazy">
         </div>
         <h3>Features</h3>
-          <p><strong>Active Rhythm Gameplay:</strong> Long‑press bars, slide faders, and tap beats for big multipliers.</p>
-          <p><strong>Idle Progression:</strong> Your fanbase and earnings grow even while you’re away.</p>
-          <p><strong>Global Tour:</strong> Country‑by‑country progression across unique festival cultures.</p>
-          <p><strong>Premium Aesthetic:</strong> High‑energy neon visuals inspired by real‑world EDM stages.</p>
-          <p><strong>Gear Upgrades:</strong> Professional‑grade decks, speakers, and effects to boost your income.</p>
+          <p><strong>Unlock New Genres:</strong> Start with Rave, then build your lineup with EDM, House, Techno and Trance.</p>
+          <p><strong>Drop the Beat:</strong> Build the hype, then hit the drop for a big income boost.</p>
+          <p><strong>World Tour:</strong> Tour country by country for bigger permanent multipliers and new genres like Chicago House.</p>
+          <p><strong>Earn While You’re Away:</strong> The beat never stops. Come back to a pile of cash your crew earned for you.</p>
+          <p><strong>Global DJ Auction:</strong> Grab speakers, lighting, and DJ booth upgrades to boost your income.</p>
+          <p><strong>Neon Club Vibes:</strong> High‑energy neon visuals inspired by real‑world EDM stages.</p>
         <p>Your mainstage moment is waiting.<br>
         <strong>Start your journey. Become the superstar.</strong></p>
         <div class="video-container">
+          <!-- To show the new trailer, replace the video ID (QbBLeO58_5A) with the ID of your new YouTube video -->
           <iframe src="https://www.youtube-nocookie.com/embed/QbBLeO58_5A"
-            title="Math Battle Gameplay"
+            title="The DJ That Never Stops Trailer"
+            loading="lazy"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
         </div>
@@ -313,7 +356,7 @@
     <section class="boxed-content">
       <h2>Math Battle: Heroes of × & ÷</h2>
       <p class="pitch">Turn math into a battle! Practice multiplication & division while having fun.</p>
-      <h2>Sharpen Your Skills with Math Battle</h2>
+      <h3>Sharpen Your Skills with Math Battle</h3>
       <p>Sharpen your Multiplication & Division math skills while unleashing epic attacks!</p>
       <p>Step into a fantasy world where solving math problems fuels your hero’s power. Choose your class (Warrior, Wizard, Ranger, or Bard) and unlock powerful attacks like Crusader Cleave or Infinity Burst. Every correct answer charges your strikes, every battle makes you stronger.</p>
 
@@ -325,9 +368,9 @@
       </a>
       
       <div class="screenshots">
-        <img src="battle1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
-        <img src="upgradeYourHero1.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
-        <img src="battle2.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
+        <img src="battle1.png" alt="Math Battle: Heroes of × &amp; ÷ battle screenshot" onclick="openPopup(this)" loading="lazy">
+        <img src="upgradeYourHero1.png" alt="Math Battle: Heroes of × &amp; ÷ hero upgrade screenshot" onclick="openPopup(this)" loading="lazy">
+        <img src="battle2.png" alt="Math Battle: Heroes of × &amp; ÷ battle screenshot 2" onclick="openPopup(this)" loading="lazy">
       </div>
       <h3>Features</h3>
       <p><strong>Epic Math Battles:</strong> Defeat enemies by solving problems quickly and accurately.</p>
@@ -339,6 +382,7 @@
       <div class="video-container">
         <iframe src="https://www.youtube-nocookie.com/embed/PuV8ulWzSWc"
           title="Math Battle Gameplay"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -349,7 +393,7 @@
     <section class="boxed-content">
       <h2>Math Battle: Guardians of + & -</h2>
       <p class="pitch">Turn math into a battle! Practice addition & subtraction while having fun.</p>
-      <h2>Sharpen Your Skills with Math Battle</h2>
+      <h3>Sharpen Your Skills with Math Battle</h3>
       <p>Sharpen your addition & subtraction math skills while unleashing epic attacks!</p>
       <p>Step into a fantasy world where solving math problems fuels your hero’s power. Choose your class (Warrior, Wizard, Ranger, or Bard) and unlock powerful attacks like Crusader Cleave or Infinity Burst. Every correct answer charges your strikes, every battle makes you stronger.</p>
 
@@ -361,9 +405,9 @@
       </a>
       
       <div class="screenshots">
-        <img src="mbas1.png" alt="Screenshot 1" onclick="openPopup(this)" loading="lazy">
-        <img src="mbas3.png" alt="Screenshot 2" onclick="openPopup(this)" loading="lazy">
-        <img src="mbas2.png" alt="Screenshot 3" onclick="openPopup(this)" loading="lazy">
+        <img src="mbas1.png" alt="Math Battle: Guardians of + &amp; - screenshot 1" onclick="openPopup(this)" loading="lazy">
+        <img src="mbas3.png" alt="Math Battle: Guardians of + &amp; - screenshot 2" onclick="openPopup(this)" loading="lazy">
+        <img src="mbas2.png" alt="Math Battle: Guardians of + &amp; - screenshot 3" onclick="openPopup(this)" loading="lazy">
       </div>
       <h3>Features</h3>
       <p><strong>Epic Math Battles:</strong> Defeat enemies by solving problems quickly and accurately.</p>
@@ -374,7 +418,8 @@
       <p>Whether you’re a student sharpening your skills or a gamer looking for a new twist, <strong>Math Battle</strong> makes learning feel like an adventure.</p>
       <div class="video-container">
         <iframe src="https://www.youtube-nocookie.com/embed/ZfUQCjYb8Gg"
-          title="Math Battle Gameplay"
+          title="Math Battle: Guardians of + &amp; - Gameplay"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -404,6 +449,7 @@
       <div class="video-container">
         <iframe src="https://www.youtube-nocookie.com/embed/O_UY9ROsVWU"
           title="Quiet Mind Voiced Meditation"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -455,8 +501,9 @@
         <img src="te4.png" alt="Tranquil Escape screenshot 4" onclick="openPopup(this)" loading="lazy">
       </div>
       <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/KXyFm-8_MeA"
+        <iframe src="https://www.youtube-nocookie.com/embed/KXyFm-8_MeA"
           title="Tranquil Escape - App Preview"
+          loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </div>
@@ -495,7 +542,9 @@
   <footer class="site-footer">
     <img src="purplOctopusLogo1.png" alt="PurplOctopus Logo" class="logo-pin" />
     <span>© 2026 PurplOctopus</span>
-      <a href="#support" style="color:#424245; text-decoration:underline;">Support</a>
+    <a href="#support">Support</a>
+    <a href="https://www.youtube.com/channel/UCK5UIQfrHLjHQGsaJb1O1qg" target="_blank" rel="noopener">YouTube</a>
+    <a href="mailto:purploctopus@gmail.com">Contact</a>
   </footer>
   <!-- Popup / lightbox container (single, corrected implementation) -->
   <div id="popup" class="popup" onclick="closePopup()">
@@ -550,6 +599,9 @@
   function closePopup() {
     document.getElementById("popup").style.display = "none";
   }
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") closePopup();
+  });
   </script>
 </body>
 </html>
