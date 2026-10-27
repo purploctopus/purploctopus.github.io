@@ -13,19 +13,19 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PurplOctopus apps: OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
+  <meta name="description" content="PurplOctopus apps and games: Beat Empire: DJ Tycoon on Roblox, OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
   <title>PurplOctopus Apps</title>
   <link rel="icon" type="image/png" href="purplOctopusLogo1.png">
 
   <!-- Open Graph / social preview -->
   <meta property="og:title" content="PurplOctopus Apps">
-  <meta property="og:description" content="OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
+  <meta property="og:description" content="Beat Empire: DJ Tycoon on Roblox, OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://purploctopus.github.io/purplOctopusLogo1.png">
   <meta property="og:url" content="https://purploctopus.github.io/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="PurplOctopus Apps">
-  <meta name="twitter:description" content="OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
+  <meta name="twitter:description" content="Beat Empire: DJ Tycoon on Roblox, OrbitLog: Space Tracker Hub, The DJ That Never Stops, Math Battle, Quiet Mind, Space Debris Inc., and Tranquil Escape. Fun, focus, and calm in one place.">
   <meta name="twitter:image" content="https://purploctopus.github.io/purplOctopusLogo1.png">
       <style>
           html { scroll-behavior: smooth; }
@@ -181,6 +181,11 @@
               pointer-events: none;
           }
 
+          /* Wide (16:9) game screenshots, e.g. Beat Empire */
+          .screenshots img.wide { max-width: 360px; border-radius: 16px; }
+          /* The official "Now on Roblox" badge (unmodified, as Roblox's badge guidelines ask) */
+          .roblox-badge img { height: 80px; width: auto; vertical-align: middle; }
+
           /* Small text link under App Store badges */
           .fine-link { display: block; margin-top: 0.5rem; font-size: 0.9rem; color: #424245; }
 
@@ -225,6 +230,7 @@
               .screenshots img {
                   max-width: 45%; /* Shows two screenshots cleanly side-by-side */
               }
+              .screenshots img.wide { max-width: 92%; } /* wide shots: one per row */
               
               /* 5. FIX THE STICKY NAV: Converts it into a horizontally scrollable thumb track */
               nav.app-thumbs {
@@ -254,6 +260,7 @@
     </header>
   <!-- Top Thumbnails -->
     <nav class="app-thumbs">
+        <a href="#beat-empire"><img src="beatempire-icon.png" alt="Beat Empire: DJ Tycoon"><span class="new-badge">NEW</span></a>
         <a href="#orbitlog"><img src="orbitLogIcon.png" alt="OrbitLog: Space Tracker Hub"></a>
         <a href="#dj-never-stops"><img src="djNeverStops.png" alt="The DJ That Never Stops"><span class="new-badge">NEW</span></a>
         <a href="#math-battle"><img src="mathbattle-icon.png" alt="Math Battle"></a>
@@ -262,6 +269,48 @@
         <a href="#space-debris-inc"><img src="space-icon.png" alt="Space Debris Inc."></a>
         <a href="#tranquil-escape"><img src="tranquil-icon.png" alt="Tranquil Escape"></a>
     </nav>
+    <!-- Beat Empire: DJ Tycoon (Roblox) -->
+    <section id="beat-empire" class="app-section">
+      <section class="boxed-content">
+        <h2>Beat Empire: DJ Tycoon</h2>
+        <p class="pitch">A DJ tycoon on Roblox: from a garage booth to the Festival Main Stage</p>
+        <h3>Build your DJ empire!</h3>
+        <p>Start in a garage with one DJ booth and build your way to the Festival Main Stage, then Rift Jump to a whole new world. <strong>Beat Empire</strong> is a free-to-play Roblox game where you collect DJs, power them up with tracks and instruments, and grow your stage from The Garage to Block Party, Roller Rink, Skyline Club and the Festival.</p>
+
+        <p>The Silence has muted DJs all over the festival. Walk into the fog, sneak past the bosses and Static Bars, grab a muted DJ and race them home to your Unmuting Booth. Then play Drop Merge to unmute them and reveal who you saved!</p>
+
+        <a class="roblox-badge" href="https://www.roblox.com/games/139530041051476/Beat-Empire-DJ-Tycoon"
+           style="display: inline-block;"
+           target="_blank"
+           rel="noopener">
+            <img src="now-on-roblox.png" alt="Now on Roblox" />
+        </a>
+
+        <div class="screenshots">
+          <img class="wide" src="BeatEmpire_DropMerge_thumbnail.png" alt="Beat Empire Drop Merge mini-game" onclick="openPopup(this)" loading="lazy">
+          <img class="wide" src="BeatEmpire_Mumbler_thumbnail.png" alt="Beat Empire boss in the Silence" onclick="openPopup(this)" loading="lazy">
+          <img class="wide" src="BeatEmpire_Stage_thumbnail.png" alt="Beat Empire stage with beat grid and upper deck" onclick="openPopup(this)" loading="lazy">
+        </div>
+
+        <h3>Features</h3>
+          <p><strong>Drop Merge:</strong> Drop the DJ orbs and merge two of the same into something bigger, all the way up to THE GOLDEN RECORD. Every round pays XP and cash.</p>
+          <p><strong>Weekly Prizes:</strong> Top the weekly Drop Merge leaderboard to win a Legendary DJ. The top 50 win prizes every week.</p>
+          <p><strong>Rescue DJs from the Silence:</strong> Push deeper into the fog for rarer DJs, all the way to Mythic and Divine.</p>
+          <p><strong>Build Your Stage:</strong> Grab cash orbs on your beat grid, add stage parts and a second floor, and move up venue by venue.</p>
+          <p><strong>Crates &amp; Gear:</strong> Open crates for tracks and instruments to power up your DJs. Duplicates level them up.</p>
+          <p><strong>The DJ Multiverse:</strong> Rift Jump through 13 festival worlds and uncover the story of the Last Headliner.</p>
+        <p>The festival is waiting.<br>
+        <strong>Grab your headphones and drop the beat.</strong></p>
+        <div class="video-container">
+          <iframe src="https://www.youtube-nocookie.com/embed/6IbcyXbdeRM"
+            title="Beat Empire Beginner's Guide"
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+    </section>
+
     <!-- OrbitLog -->
     <section id="orbitlog" class="app-section">
       <section class="boxed-content">
@@ -529,6 +578,9 @@
       <h3>Frequently Asked Questions</h3>
 
       <div style="text-align:left; max-width:800px; margin:0 auto;">
+        <h4>Beat Empire: DJ Tycoon (Roblox)</h4>
+        <p><strong>Lost progress, a purchase problem or found a bug?</strong> Email us with your Roblox username and what happened, and we'll look into it.</p>
+
         <h4>Quiet Mind</h4>
         <p><strong>A sound or sleep story isn't playing.</strong> Make sure you're connected to the internet the first time you play a track so it can download; after that it's available offline. If audio still won't play, force-quit and reopen the app, and check that your device isn't in silent-switch or Do Not Disturb mode blocking playback.</p>
         <p><strong>How do I restore a purchase?</strong> Open Settings within the app and tap Restore Purchases. Purchases are tied to the Apple ID used at the time of purchase.</p>
